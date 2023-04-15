@@ -16,5 +16,6 @@ while True:
         if(cont == 200):
             break
             
-'{"idcan":42,"idcat":5}' https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar 
+curl -X POST --header 'Content-Type: application/json' -d '{ "idcan":42, "idcat":5 }' https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar
+
 
