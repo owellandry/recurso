@@ -3,6 +3,10 @@ import random
 import requests
 import json
 
+#captcha
+#_grecaptcha:"09AMqPRJxWlovGLU4ds3xKgQQtInnc6ZZVH8raJ3f8nLGycBp-OFuPexjDmzkze272Ih2ygMSoe37df7ahYnrL-AUwPNnPxS42us0"
+
+
 datos = { 'idcan':42, 'idcat':5 }
 headers = {'Content-Type': 'application/json'}
 cont=1
