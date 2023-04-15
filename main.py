@@ -10,7 +10,8 @@ cont=1
 while True:
     time.sleep(random.uniform(107, 208))  
     peticion = requests.post("https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar", headers=headers, data=json.dumps(datos))
+    cont=cont+1
     print(f"voto, {cont}")
     print(peticion.text)
-    if(cont == 200):
+    if(cont == 120):
         break
