@@ -16,9 +16,5 @@ while True:
         if(cont == 200):
             break
             
-#https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar
+'{"idcan":42,"idcat":5}' https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar 
 
-#{
-#    "idcan":42,
-#    "idcat":5
-#}
