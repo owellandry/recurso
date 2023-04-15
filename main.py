@@ -1,21 +1,16 @@
-import pyautogui
 import time
 import random
+import requests
+import json
 
-# Mueve el cursor a la posición deseada y lo mantiene allí
-x, y = 1780, 160
-pyautogui.moveTo(x, y)
-pyautogui.FAILSAFE = False  # Desactiva la función de seguridad
+datos = { 'idcan':42, 'idcat':5 }
+headers = {'Content-Type': 'application/json'}
 cont=1
+
 while True:
-    # Hace clic en el botón tres veces con un intervalo de 3 a 5 segundos entre cada clic
-    for i in range(3):
-        pyautogui.click(button='left')
-        time.sleep(random.uniform(107, 208))  
-        print(f"voto, {cont}")
-        if(cont == 200):
-            break
-            
-curl -X POST --header 'Content-Type: application/json' -d '{ "idcan":42, "idcat":5 }' https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar
-
-
+    time.sleep(random.uniform(107, 208))  
+    peticion = requests.post("https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar", headers=headers, data=json.dumps(datos))
+    print(f"voto, {cont}")
+    print(peticion.text)
+    if(cont == 200):
+        break
