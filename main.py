@@ -14,3 +14,5 @@ while True:
         clics_realizados += 1
         time.sleep(random.uniform(10, 20)) 
         print("Se ha realizado el clic número", clics_realizados)
+        if(const == 200):
+            breack
