@@ -1,7 +1,7 @@
 python3 -m pip install pyautogui &&
-sudo apt-get install scrot &&
-sudo apt-get install python3-tk &&
-sudo apt-get install python3-dev
+sudo apt-get install scrot -y &&
+sudo apt-get install python3-tk -y &&
+sudo apt-get install python3-dev -y
 
 import pyautogui as pg
 
