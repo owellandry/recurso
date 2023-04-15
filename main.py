@@ -15,6 +15,5 @@ while True:
         print(f"voto, {cont}")
         if(cont == 200):
             break
-
-
+            
 #https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar
