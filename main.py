@@ -17,3 +17,8 @@ while True:
             break
             
 #https://www.vanguardia.com/empresasgeneradoras/reconocimientos/votar
+
+#{
+#    "idcan":42,
+#    "idcat":5
+#}
